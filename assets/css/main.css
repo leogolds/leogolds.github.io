@@ -3808,7 +3808,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
     255,
     255,
     255,
-    0.9
+    1
   ); /* Adjust the background color for the fixed state */
   max-width: none;
   /* end addition */
@@ -3816,6 +3816,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
   transition: transform 1s ease, opacity 1s ease, background-color 1s ease;
   z-index: 3;
 }
+
 #nav.sticky a {
   color: rgb(57, 61, 65);
   border-bottom-color: rgba(255, 255, 255, 0.5);
@@ -3926,7 +3927,9 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 
 #nav ul.links li a:hover {
   /* color: inherit !important; */
-  background-color: rgba(255, 255, 255, 0.1);
+  color: #4d7cff !important;
+  /* CHANGE ABOVE */
+  /* background-color: rgba(255, 255, 255, 0.1); */
 }
 
 #nav ul.links li.active {
@@ -3934,7 +3937,8 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 }
 
 #nav ul.links li.active a {
-  color: #1e252d;
+  /* color: #1e252d; */
+  color: #1352bf;
 }
 
 #nav ul.links li.active a:hover {
@@ -4085,6 +4089,16 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
   border-style: solid;
   border-top-width: 2px;
   text-align: center;
+  /* addition */
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-flex-direction: column;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #main > .posts > article > :last-child {
